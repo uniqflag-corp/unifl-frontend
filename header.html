@@ -1,0 +1,43 @@
+<!-- Header Component -->
+<div class="header__inner">
+  <a href="/" class="header__logo">UNIFL</a>
+  <nav class="header__nav">
+    <div class="header__nav-item"><a href="/about" class="header__nav-link" data-nav="about">회사소개</a></div>
+    <div class="header__nav-item">
+      <a href="/service/homepage" class="header__nav-link" data-nav="service">서비스 ▾</a>
+      <div class="header__dropdown">
+        <a href="/service/homepage" class="header__dropdown-link">홈페이지 제작</a>
+        <a href="#" class="header__dropdown-link">온라인 마케팅 (준비중)</a>
+      </div>
+    </div>
+    <div class="header__nav-item"><a href="/portfolio" class="header__nav-link" data-nav="portfolio">포트폴리오</a></div>
+    <div class="header__nav-item"><a href="/estimate" class="header__nav-link" data-nav="estimate">견적계산기</a></div>
+    <div class="header__nav-item">
+      <a href="/guide/process" class="header__nav-link" data-nav="guide">제작가이드 ▾</a>
+      <div class="header__dropdown">
+        <a href="/guide/process" class="header__dropdown-link">제작절차</a>
+        <a href="/guide/prepare" class="header__dropdown-link">준비사항</a>
+        <a href="/guide/faq" class="header__dropdown-link">자주 묻는 질문</a>
+      </div>
+    </div>
+  </nav>
+  <div class="header__actions">
+    <button class="header__theme-toggle" id="themeToggle"><span class="theme-icon">🌙</span></button>
+    <a href="/contact" class="btn btn--primary btn--sm">문의하기</a>
+    <button class="header__mobile-toggle" id="mobileToggle">☰</button>
+  </div>
+</div>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="/about" class="mobile-nav__link">회사소개</a>
+  <a href="/service/homepage" class="mobile-nav__link">서비스</a>
+  <a href="/service/homepage" class="mobile-nav__sub-link">홈페이지 제작</a>
+  <a href="/portfolio" class="mobile-nav__link">포트폴리오</a>
+  <a href="/guide/process" class="mobile-nav__link">제작가이드</a>
+  <a href="/guide/process" class="mobile-nav__sub-link">제작절차</a>
+  <a href="/guide/prepare" class="mobile-nav__sub-link">준비사항</a>
+  <a href="/guide/faq" class="mobile-nav__sub-link">자주 묻는 질문</a>
+  <a href="/contact" class="mobile-nav__link">문의하기</a>
+  <button class="header__theme-toggle" id="themeToggleMobile" style="margin-top:16px"><span class="theme-icon">🌙</span></button>
+</div>
