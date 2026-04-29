@@ -57,7 +57,7 @@
     // 포트폴리오 데이터 불러오기
     async function fetchPortfolios() {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/portfolios');
+        const response = await fetch(`${window.UNIFL_CONFIG.API_URL}/portfolios`);
         const result = await response.json();
 
         if (result.success) {
@@ -97,7 +97,7 @@
         }
         
         const imgSrc = p.thumbnail
-          ? `http://127.0.0.1:8000/storage/${p.thumbnail}`
+          ? `${window.UNIFL_CONFIG.STORAGE_URL}/${p.thumbnail}`
           : '';
         
         const imgStyle = imgSrc

@@ -3,6 +3,12 @@
    Navigation, Dark Mode, Scroll Effects
    ============================================ */
 
+// Global Configuration
+window.UNIFL_CONFIG = {
+  API_URL: 'http://127.0.0.1:8000/api',
+  STORAGE_URL: 'http://127.0.0.1:8000/storage'
+};
+
 document.addEventListener('DOMContentLoaded', async () => {
   // 1. Load Common Components (Header/Footer)
   await loadComponents();
@@ -18,14 +24,24 @@ document.addEventListener('DOMContentLoaded', async () => {
   setActiveNav();
 });
 
+// Utility: Get relative root path based on script location
+function getRootPath() {
+  const script = document.querySelector('script[src$="main.js"]');
+  if (script) {
+    return script.getAttribute('src').replace('js/main.js', '');
+  }
+  return '';
+}
+
 /* ── Component Loader ── */
 async function loadComponents() {
   const headerPlaceholder = document.getElementById('header-placeholder');
   const footerPlaceholder = document.getElementById('footer-placeholder');
+  const rootPath = getRootPath();
 
   if (headerPlaceholder) {
     try {
-      const response = await fetch('/header.html');
+      const response = await fetch(rootPath + 'header.html');
       const html = await response.text();
       headerPlaceholder.innerHTML = html;
       // Wrap the content in <header> tag for styling
@@ -41,7 +57,7 @@ async function loadComponents() {
 
   if (footerPlaceholder) {
     try {
-      const response = await fetch('/footer.html');
+      const response = await fetch(rootPath + 'footer.html');
       const html = await response.text();
       footerPlaceholder.innerHTML = html;
       // Wrap the content in <footer> tag
