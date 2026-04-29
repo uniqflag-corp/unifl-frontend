@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>포트폴리오 | 유니플</title>
+  <meta name="description" content="유니플에서 제작한 프로젝트 사례를 확인해보세요.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages/home.css">
+  <link rel="stylesheet" href="css/pages/sub.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header__inner"><a href="/" class="header__logo">UNIFL</a>
+      <nav class="header__nav">
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">회사소개</a></div>
+        <div class="header__nav-item"><a href="service/homepage.html" class="header__nav-link">서비스 ▾</a>
+          <div class="header__dropdown"><a href="service/homepage.html" class="header__dropdown-link">홈페이지 제작</a></div>
+        </div>
+        <div class="header__nav-item"><a href="portfolio.html" class="header__nav-link is-active">포트폴리오</a></div>
+        <div class="header__nav-item"><a href="guide/process.html" class="header__nav-link">제작가이드 ▾</a>
+          <div class="header__dropdown"><a href="guide/process.html" class="header__dropdown-link">제작절차</a><a
+              href="guide/prepare.html" class="header__dropdown-link">준비사항</a><a href="guide/faq.html"
+              class="header__dropdown-link">자주 묻는 질문</a></div>
+        </div>
+      </nav>
+      <div class="header__actions"><button class="header__theme-toggle" id="themeToggle"><span
+            class="theme-icon">🌙</span></button><a href="contact.html" class="btn btn--primary btn--sm">문의하기</a><button
+          class="header__mobile-toggle" id="mobileToggle">☰</button></div>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav"><a href="/" class="mobile-nav__link">홈</a><a href="about.html"
+      class="mobile-nav__link">회사소개</a><a href="service/homepage.html" class="mobile-nav__link">서비스</a><a
+      href="portfolio.html" class="mobile-nav__link">포트폴리오</a><a href="guide/process.html"
+      class="mobile-nav__link">제작가이드</a><a href="contact.html" class="mobile-nav__link">문의하기</a></div>
+
+  <section class="page-hero">
+    <div class="container" style="position:relative;z-index:1"><span class="page-hero__label">Portfolio</span>
+      <h1 class="page-hero__title">제작 사례</h1>
+      <p class="page-hero__desc">업종별, 서비스별로 실제 제작한 사이트를 확인하실 수 있습니다.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="portfolio-filter reveal">
+        <button class="portfolio-filter__btn is-active">전체</button>
+        <button class="portfolio-filter__btn">기업 홈페이지</button>
+        <button class="portfolio-filter__btn">쇼핑몰</button>
+        <button class="portfolio-filter__btn">랜딩페이지</button>
+        <button class="portfolio-filter__btn">예약 시스템</button>
+      </div>
+      <div class="portfolio-full-grid" id="portfolioGrid">
+        <!-- API를 통해 동적으로 로드됩니다 -->
+        <div class="loading-spinner" style="grid-column:1/-1;text-align:center;padding:var(--space-20)">포트폴리오를 불러오는
+          중입니다...</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-section__content reveal">
+      <h2 class="cta-section__title"><span>Next Project?</span>나만의 프로젝트를 시작하세요</h2>
+      <p class="cta-section__desc">유니플과 함께 비즈니스 성장을 위한 홈페이지를 만들어보세요.</p>
+      <div class="cta-section__actions"><a href="contact.html" class="btn btn--primary btn--lg">무료 상담받기</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">UNIFL</div>
+          <p class="footer__desc">고객 중심의 성장을 위한 웹 에이전시</p>
+          <div class="footer__contact-item">📞 010-8808-0701</div>
+        </div>
+        <div>
+          <h4 class="footer__heading">서비스</h4>
+          <div class="footer__links"><a href="service/homepage.html" class="footer__link">홈페이지 제작</a></div>
+        </div>
+        <div>
+          <h4 class="footer__heading">제작가이드</h4>
+          <div class="footer__links"><a href="guide/process.html" class="footer__link">제작절차</a><a href="guide/faq.html"
+              class="footer__link">FAQ</a></div>
+        </div>
+        <div>
+          <h4 class="footer__heading">바로가기</h4>
+          <div class="footer__links"><a href="about.html" class="footer__link">회사소개</a><a href="contact.html"
+              class="footer__link">문의하기</a></div>
+        </div>
+      </div>
+      <div class="footer__bottom"><span>© 2025 UNIFL. All rights reserved.</span></div>
+    </div>
+  </footer>
+  <div class="floating-cta"><a href="tel:010-8808-0701" class="floating-cta__btn floating-cta__btn--phone">📞</a><a
+      href="contact.html" class="floating-cta__btn floating-cta__btn--primary">✉️</a><button
+      class="floating-cta__btn floating-cta__btn--top" id="scrollToTop">↑</button></div>
+  <script src="js/main.js"></script>
+  <script>
+    let allPortfolios = [];
+
+    // 포트폴리오 데이터 불러오기
+    async function fetchPortfolios() {
+      try {
+        const response = await fetch('http://127.0.0.1:8000/api/portfolios');
+        const result = await response.json();
+
+        if (result.success) {
+          allPortfolios = result.data;
+          renderPortfolios('전체');
+        } else {
+          document.getElementById('portfolioGrid').innerHTML = '<p style="grid-column:1/-1;text-align:center">데이터를 불러오지 못했습니다.</p>';
+        }
+      } catch (error) {
+        console.error('Fetch Error:', error);
+        document.getElementById('portfolioGrid').innerHTML = '<p style="grid-column:1/-1;text-align:center">서버 연결에 실패했습니다.</p>';
+      }
+    }
+
+    // 포트폴리오 화면에 그리기
+    function renderPortfolios(filter) {
+      const grid = document.getElementById('portfolioGrid');
+      grid.innerHTML = '';
+
+      const filtered = filter === '전체'
+        ? allPortfolios
+        : allPortfolios.filter(p => p.category === filter);
+
+      if (filtered.length === 0) {
+        grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;padding:var(--space-10)">등록된 포트폴리오가 없습니다.</p>';
+        return;
+      }
+
+      filtered.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'portfolio-card';
+        card.style.cursor = p.url ? 'pointer' : 'default'; // URL이 있으면 포인터 커서
+        
+        // 클릭 시 URL 이동 이벤트 추가
+        if (p.url) {
+          card.onclick = () => window.open(p.url, '_blank');
+        }
+        
+        const imgSrc = p.thumbnail
+          ? `http://127.0.0.1:8000/storage/${p.thumbnail}`
+          : '';
+        
+        const imgStyle = imgSrc
+          ? `background-image:url(${imgSrc});background-size:cover;background-position:center`
+          : `background:linear-gradient(135deg, var(--color-primary), var(--color-secondary))`;
+
+        card.innerHTML = `
+          <div class="portfolio-card__img" style="${imgStyle};width:100%;height:100%"></div>
+          <div class="portfolio-card__overlay">
+            <span class="portfolio-card__category">${p.category}</span>
+            <span class="portfolio-card__title">${p.title}</span>
+            ${p.url ? '<span class="portfolio-card__link-text" style="font-size:0.8rem;margin-top:var(--space-2);opacity:0.8">사이트 방문하기 ↗</span>' : ''}
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      // 애니메이션 트리거 (main.js의 Observer 연동)
+      if (window.observer) {
+        document.querySelectorAll('.reveal').forEach(el => window.observer.observe(el));
+      }
+    }
+
+    // 필터 버튼 이벤트 연결
+    document.querySelectorAll('.portfolio-filter__btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        document.querySelector('.portfolio-filter__btn.is-active').classList.remove('is-active');
+        this.classList.add('is-active');
+        renderPortfolios(this.innerText);
+      });
+    });
+
+    // 초기 로드
+    fetchPortfolios();
+  </script>
+</body>
+
+</html>

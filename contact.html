@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>문의하기 | 유니플</title>
+<meta name="description" content="유니플에 프로젝트를 문의하세요. 무료 상담으로 최적의 솔루션을 제안드립니다.">
+<link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages/sub.css">
+</head>
+<body>
+<header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo">UNIFL</a><nav class="header__nav"><div class="header__nav-item"><a href="about.html" class="header__nav-link">회사소개</a></div><div class="header__nav-item"><a href="service/homepage.html" class="header__nav-link">서비스 ▾</a><div class="header__dropdown"><a href="service/homepage.html" class="header__dropdown-link">홈페이지 제작</a></div></div><div class="header__nav-item"><a href="portfolio.html" class="header__nav-link">포트폴리오</a></div><div class="header__nav-item"><a href="guide/process.html" class="header__nav-link">제작가이드 ▾</a><div class="header__dropdown"><a href="guide/process.html" class="header__dropdown-link">제작절차</a><a href="guide/prepare.html" class="header__dropdown-link">준비사항</a><a href="guide/faq.html" class="header__dropdown-link">자주 묻는 질문</a></div></div></nav><div class="header__actions"><button class="header__theme-toggle" id="themeToggle"><span class="theme-icon">🌙</span></button><a href="contact.html" class="btn btn--primary btn--sm">문의하기</a><button class="header__mobile-toggle" id="mobileToggle">☰</button></div></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="/" class="mobile-nav__link">홈</a><a href="about.html" class="mobile-nav__link">회사소개</a><a href="service/homepage.html" class="mobile-nav__link">서비스</a><a href="portfolio.html" class="mobile-nav__link">포트폴리오</a><a href="guide/process.html" class="mobile-nav__link">제작가이드</a><a href="contact.html" class="mobile-nav__link">문의하기</a></div>
+
+<section class="page-hero"><div class="container" style="position:relative;z-index:1"><span class="page-hero__label">Contact</span><h1 class="page-hero__title">프로젝트 문의하기</h1><p class="page-hero__desc">유니플과 함께 성공적인 비즈니스를 시작해보세요.</p></div></section>
+
+<section class="section">
+<div class="container">
+  <div class="contact-grid">
+    <div class="reveal">
+      <h2 style="font-size:var(--text-2xl);font-weight:var(--font-bold);margin-bottom:var(--space-6)">문의 양식</h2>
+      <form class="contact-form" id="contactForm">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4)">
+          <div class="form-group"><label for="name">이름 / 회사명 *</label><input type="text" id="name" name="name" required placeholder="홍길동 / (주)유니플"></div>
+          <div class="form-group"><label for="phone">연락처 *</label><input type="tel" id="phone" name="phone" required placeholder="010-0000-0000"></div>
+        </div>
+        <div class="form-group"><label for="email">이메일</label><input type="email" id="email" name="email" placeholder="example@email.com"></div>
+        <div class="form-group"><label for="type">프로젝트 유형</label><select id="type" name="project_type"><option value="">선택해주세요</option><option>기업 홈페이지</option><option>쇼핑몰</option><option>랜딩페이지</option><option>맞춤형 솔루션</option><option>유지보수</option><option>기타</option></select></div>
+        <div class="form-group"><label for="budget">예산 범위</label><select id="budget" name="budget_range"><option value="">선택해주세요</option><option>100만원 미만</option><option>100~200만원</option><option>200~500만원</option><option>500만원 이상</option><option>미정 / 상담 후 결정</option></select></div>
+        <div class="form-group"><label for="message">프로젝트 설명 *</label><textarea id="message" name="message" required placeholder="원하시는 프로젝트에 대해 자유롭게 설명해주세요. 참고 사이트, 필요 기능, 일정 등을 알려주시면 더 정확한 상담이 가능합니다."></textarea></div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">문의 보내기</button>
+      </form>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <h2 style="font-size:var(--text-2xl);font-weight:var(--font-bold);margin-bottom:var(--space-6)">연락처</h2>
+      <div class="contact-info-cards">
+        <div class="contact-info-card"><div class="contact-info-card__icon">📞</div><div><div class="contact-info-card__title">전화 상담</div><div class="contact-info-card__desc"><a href="tel:010-8808-0701" style="color:var(--color-primary)">010-8808-0701</a><br>평일 09:00 ~ 18:00</div></div></div>
+        <div class="contact-info-card"><div class="contact-info-card__icon">✉️</div><div><div class="contact-info-card__title">이메일</div><div class="contact-info-card__desc"><a href="mailto:uniqflag@gmail.com" style="color:var(--color-primary)">uniqflag@gmail.com</a></div></div></div>
+        <div class="contact-info-card"><div class="contact-info-card__icon">💬</div><div><div class="contact-info-card__title">카카오톡</div><div class="contact-info-card__desc">카카오톡 채널에서 실시간 상담이 가능합니다.</div></div></div>
+        <div class="contact-info-card"><div class="contact-info-card__icon">📍</div><div><div class="contact-info-card__title">찾아오시는 길</div><div class="contact-info-card__desc">광주광역시 서구 치평로 116<br>월계수타운 407호</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer__bottom"><span>© 2025 UNIFL. All rights reserved.</span></div></div></footer>
+<div class="floating-cta"><a href="tel:010-8808-0701" class="floating-cta__btn floating-cta__btn--phone">📞</a><button class="floating-cta__btn floating-cta__btn--top" id="scrollToTop">↑</button></div>
+<script src="js/main.js"></script>
+<script>
+  // 페이지 로드 시 견적 데이터 확인
+  document.addEventListener('DOMContentLoaded', () => {
+    const estimateRaw = localStorage.getItem('unifl_estimate');
+    if (estimateRaw) {
+      try {
+        const estimate = JSON.parse(estimateRaw);
+        const messageField = document.getElementById('message');
+        
+        // 견적 정보 텍스트 생성
+        let estimateText = `[예상 견적서 내역 - ${estimate.date}]\n\n`;
+        estimateText += estimate.items.map(item => `• ${item}`).join('\n');
+        estimateText += `\n\n--------------------------\n`;
+        estimateText += `총 예상 합계: ${estimate.total}\n`;
+        estimateText += `--------------------------\n\n`;
+        estimateText += `위 견적 내용을 바탕으로 상담받고 싶습니다.`;
+
+        messageField.value = estimateText;
+        
+        // 사용한 데이터 삭제 (새로고침 시 중복 입력 방지)
+        localStorage.removeItem('unifl_estimate');
+      } catch (e) {
+        console.error('Failed to parse estimate data', e);
+      }
+    }
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const form = e.target;
+    const submitBtn = document.getElementById('submitBtn');
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+    
+    // 버튼 상태 업데이트
+    const originalBtnText = submitBtn.innerText;
+    submitBtn.innerText = '보내는 중...';
+    submitBtn.disabled = true;
+    
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/inquiries', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+      
+      const result = await response.json();
+      
+      if (response.ok) {
+        alert(result.message || '문의가 성공적으로 접수되었습니다!');
+        form.reset();
+      } else {
+        alert(result.message || '오류가 발생했습니다. 다시 시도해주세요.');
+        console.error('Errors:', result.errors);
+      }
+    } catch (error) {
+      alert('서버와 통신하는 중 오류가 발생했습니다.');
+      console.error('Fetch Error:', error);
+    } finally {
+      submitBtn.innerText = originalBtnText;
+      submitBtn.disabled = false;
+    }
+  });
+</script>
+</body></html>

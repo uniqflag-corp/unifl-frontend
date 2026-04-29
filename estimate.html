@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>예상 견적 계산기 | 유니플</title>
+<meta name="description" content="클릭 몇 번으로 홈페이지 제작 예상 비용을 확인하세요. 유니플 자동 견적 계산기.">
+<link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/pages/sub.css"><link rel="stylesheet" href="css/pages/estimate.css">
+</head>
+<body>
+<!-- HEADER -->
+<header class="header" id="header"><div class="header__inner"><a href="/" class="header__logo">UNIFL</a><nav class="header__nav"><div class="header__nav-item"><a href="about.html" class="header__nav-link">회사소개</a></div><div class="header__nav-item"><a href="service/homepage.html" class="header__nav-link">서비스 ▾</a><div class="header__dropdown"><a href="service/homepage.html" class="header__dropdown-link">홈페이지 제작</a></div></div><div class="header__nav-item"><a href="portfolio.html" class="header__nav-link">포트폴리오</a></div><div class="header__nav-item"><a href="guide/process.html" class="header__nav-link">제작가이드 ▾</a><div class="header__dropdown"><a href="guide/process.html" class="header__dropdown-link">제작절차</a><a href="guide/prepare.html" class="header__dropdown-link">준비사항</a><a href="guide/faq.html" class="header__dropdown-link">자주 묻는 질문</a></div></div></nav><div class="header__actions"><button class="header__theme-toggle" id="themeToggle"><span class="theme-icon">🌙</span></button><a href="contact.html" class="btn btn--primary btn--sm">문의하기</a><button class="header__mobile-toggle" id="mobileToggle">☰</button></div></div></header>
+<div class="mobile-nav" id="mobileNav"><a href="/" class="mobile-nav__link">홈</a><a href="about.html" class="mobile-nav__link">회사소개</a><a href="service/homepage.html" class="mobile-nav__link">서비스</a><a href="portfolio.html" class="mobile-nav__link">포트폴리오</a><a href="estimate.html" class="mobile-nav__link">견적 계산기</a><a href="contact.html" class="mobile-nav__link">문의하기</a></div>
+
+<!-- HERO -->
+<section class="page-hero"><div class="container" style="position:relative;z-index:1"><span class="page-hero__label">Estimate</span><h1 class="page-hero__title">예상 견적 계산기</h1><p class="page-hero__desc">원하시는 옵션을 선택하시면 예상 제작 비용을 바로 확인하실 수 있습니다.</p></div></section>
+
+<!-- CALCULATOR -->
+<section class="section">
+<div class="container">
+
+  <!-- Step Indicators -->
+  <div class="calc-steps">
+    <div class="calc-step-indicator is-active">① 사이트 유형</div>
+    <div class="calc-step-indicator">② 페이지 & 디자인</div>
+    <div class="calc-step-indicator">③ 기능 선택</div>
+    <div class="calc-step-indicator">④ 부가 서비스</div>
+  </div>
+
+  <div class="calc-layout">
+    <!-- LEFT: Steps -->
+    <div class="calc-main">
+
+      <!-- STEP 1: 사이트 유형 -->
+      <div class="calc-panel is-active">
+        <h2 class="calc-panel__title">어떤 사이트를 만드시나요?</h2>
+        <p class="calc-panel__desc">제작하실 웹사이트의 유형을 선택해주세요.</p>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">🌐</span> 사이트 유형</div>
+          <div class="calc-cards">
+            <div class="calc-card" data-price="800000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">📄</div>
+              <div class="calc-card__name">랜딩페이지</div>
+              <div class="calc-card__desc">광고 전환 최적화 1페이지</div>
+              <div class="calc-card__price">80만원~</div>
+            </div>
+            <div class="calc-card" data-price="1500000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">🖥️</div>
+              <div class="calc-card__name">기업 홈페이지</div>
+              <div class="calc-card__desc">5~10페이지 반응형 웹사이트</div>
+              <div class="calc-card__price">150만원~</div>
+            </div>
+            <div class="calc-card" data-price="2500000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">🛒</div>
+              <div class="calc-card__name">쇼핑몰</div>
+              <div class="calc-card__desc">결제·상품관리 통합 쇼핑몰</div>
+              <div class="calc-card__price">250만원~</div>
+            </div>
+            <div class="calc-card" data-price="4000000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">⚙️</div>
+              <div class="calc-card__name">맞춤형 솔루션</div>
+              <div class="calc-card__desc">예약·매칭·관리 시스템 등</div>
+              <div class="calc-card__price">400만원~</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-nav">
+          <div></div>
+          <button class="btn btn--primary" data-calc-next>다음 단계 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 2: 페이지 & 디자인 -->
+      <div class="calc-panel">
+        <h2 class="calc-panel__title">페이지 수 & 디자인</h2>
+        <p class="calc-panel__desc">필요한 페이지 수량과 디자인 수준을 선택해주세요.</p>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">📑</span> 추가 페이지</div>
+          <div class="calc-qty" data-unit-price="150000" data-min="0" data-max="30">
+            <div class="calc-qty__info"><div class="calc-qty__name">서브 페이지 추가</div><div class="calc-qty__unit">기본 포함 이후 추가 페이지 (개당 15만원)</div></div>
+            <div class="calc-qty__controls"><button class="calc-qty__btn" data-dir="-">−</button><div class="calc-qty__value">0</div><button class="calc-qty__btn" data-dir="+">+</button></div>
+            <div class="calc-qty__price">0원</div>
+          </div>
+          <div class="calc-qty" data-unit-price="100000" data-min="0" data-max="10">
+            <div class="calc-qty__info"><div class="calc-qty__name">게시판 추가</div><div class="calc-qty__unit">공지사항, 갤러리, FAQ 등 (개당 10만원)</div></div>
+            <div class="calc-qty__controls"><button class="calc-qty__btn" data-dir="-">−</button><div class="calc-qty__value">0</div><button class="calc-qty__btn" data-dir="+">+</button></div>
+            <div class="calc-qty__price">0원</div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">🎨</span> 디자인 수준</div>
+          <div class="calc-cards">
+            <div class="calc-card" data-price="0">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">📋</div>
+              <div class="calc-card__name">기본 디자인</div>
+              <div class="calc-card__desc">클린하고 깔끔한 표준 레이아웃</div>
+              <div class="calc-card__price">기본 포함</div>
+            </div>
+            <div class="calc-card" data-price="500000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">✨</div>
+              <div class="calc-card__name">프리미엄 디자인</div>
+              <div class="calc-card__desc">맞춤 인터랙션·애니메이션 포함</div>
+              <div class="calc-card__price">+50만원</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-nav">
+          <button class="btn btn--secondary" data-calc-prev>← 이전</button>
+          <button class="btn btn--primary" data-calc-next>다음 단계 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 3: 기능 선택 -->
+      <div class="calc-panel">
+        <h2 class="calc-panel__title">필요한 기능 선택</h2>
+        <p class="calc-panel__desc">프로젝트에 필요한 기능을 선택해주세요. (중복 선택 가능)</p>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">👤</span> 회원 기능</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="200000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">회원가입 / 로그인</div><div class="calc-check__desc">이메일 기반 회원 시스템</div></div><div class="calc-check__price">+20만원</div></div>
+            <div class="calc-check" data-price="150000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">소셜 로그인 연동</div><div class="calc-check__desc">카카오, 네이버, 구글 로그인 (1종)</div></div><div class="calc-check__price">+15만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">회원 등급 / 권한 관리</div><div class="calc-check__desc">관리자, 일반 회원 등 권한 분리</div></div><div class="calc-check__price">+10만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">💳</span> 결제 기능</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="300000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">PG 결제 연동</div><div class="calc-check__desc">국내 카드 결제 (토스페이먼츠 등)</div></div><div class="calc-check__price">+30만원</div></div>
+            <div class="calc-check" data-price="200000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">간편 결제</div><div class="calc-check__desc">네이버페이 / 카카오페이 연동</div></div><div class="calc-check__price">+20만원</div></div>
+            <div class="calc-check" data-price="150000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">장바구니 / 주문관리</div><div class="calc-check__desc">장바구니 담기, 주문 내역 관리</div></div><div class="calc-check__price">+15만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">📝</span> 콘텐츠 기능</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">에디터 (위지윅)</div><div class="calc-check__desc">텍스트 스타일링, 이미지 삽입</div></div><div class="calc-check__price">+10만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">파일 / 이미지 업로드</div><div class="calc-check__desc">다중 파일 업로드 및 관리</div></div><div class="calc-check__price">+10만원</div></div>
+            <div class="calc-check" data-price="80000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">댓글 / 리뷰</div><div class="calc-check__desc">게시물 댓글 및 별점 리뷰 기능</div></div><div class="calc-check__price">+8만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">📅</span> 예약 기능</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="200000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">기본 예약 시스템</div><div class="calc-check__desc">날짜/시간 선택 및 예약 등록</div></div><div class="calc-check__price">+20만원</div></div>
+            <div class="calc-check" data-price="150000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">캘린더 UI</div><div class="calc-check__desc">캘린더 기반 일정 표시 및 관리</div></div><div class="calc-check__price">+15만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">예약 알림</div><div class="calc-check__desc">예약 확정 / 변경 시 자동 알림</div></div><div class="calc-check__price">+10만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-nav">
+          <button class="btn btn--secondary" data-calc-prev>← 이전</button>
+          <button class="btn btn--primary" data-calc-next>다음 단계 →</button>
+        </div>
+      </div>
+
+      <!-- STEP 4: 부가 서비스 -->
+      <div class="calc-panel">
+        <h2 class="calc-panel__title">부가 서비스</h2>
+        <p class="calc-panel__desc">추가적으로 필요한 서비스를 선택해주세요.</p>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">🔧</span> 관리자 기능</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="200000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">관리자 페이지</div><div class="calc-check__desc">콘텐츠/회원/주문 관리 대시보드</div></div><div class="calc-check__price">+20만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">배너 / 팝업 관리</div><div class="calc-check__desc">메인 배너 및 팝업 등록·관리</div></div><div class="calc-check__price">+10만원</div></div>
+            <div class="calc-check" data-price="150000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">통계 / 대시보드</div><div class="calc-check__desc">방문자·매출·주문 통계 시각화</div></div><div class="calc-check__price">+15만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">📊</span> SEO & 마케팅</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="0"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">기본 SEO 최적화</div><div class="calc-check__desc">메타태그, 사이트맵, 구조화 데이터</div></div><div class="calc-check__price">기본 포함</div></div>
+            <div class="calc-check" data-price="200000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">고급 SEO 최적화</div><div class="calc-check__desc">키워드 전략, 속도 최적화, 스키마 마크업</div></div><div class="calc-check__price">+20만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">구글 애널리틱스(GA4) 연동</div><div class="calc-check__desc">방문자 분석 및 전환 추적 설정</div></div><div class="calc-check__price">+10만원</div></div>
+            <div class="calc-check" data-price="50000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">네이버 서치어드바이저 등록</div><div class="calc-check__desc">네이버 검색 노출 등록</div></div><div class="calc-check__price">+5만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">🌏</span> 기타</div>
+          <div class="calc-checks">
+            <div class="calc-check" data-price="300000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">다국어 지원</div><div class="calc-check__desc">기본 국문 + 1개 언어 추가</div></div><div class="calc-check__price">+30만원</div></div>
+            <div class="calc-check" data-price="100000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">SMS / 카카오 알림톡 연동</div><div class="calc-check__desc">자동 문자/카카오톡 알림 발송</div></div><div class="calc-check__price">+10만원</div></div>
+            <div class="calc-check" data-price="150000"><div class="calc-check__box">✓</div><div class="calc-check__info"><div class="calc-check__name">이메일 자동 발송</div><div class="calc-check__desc">문의 접수, 주문 확인 등 이메일 자동화</div></div><div class="calc-check__price">+15만원</div></div>
+          </div>
+        </div>
+
+        <div class="calc-group">
+          <div class="calc-group__label"><span class="calc-group__label-icon">🛡️</span> 유지보수</div>
+          <div class="calc-cards">
+            <div class="calc-card" data-price="0">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">🆓</div>
+              <div class="calc-card__name">없음</div>
+              <div class="calc-card__desc">유지보수 계약 없이 납품</div>
+              <div class="calc-card__price">해당 없음</div>
+            </div>
+            <div class="calc-card" data-price="100000">
+              <div class="calc-card__check">✓</div>
+              <div class="calc-card__icon">🛡️</div>
+              <div class="calc-card__name">월 정기 유지보수</div>
+              <div class="calc-card__desc">보안패치 + 콘텐츠 수정 + 모니터링</div>
+              <div class="calc-card__price">월 10만원</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-nav">
+          <button class="btn btn--secondary" data-calc-prev>← 이전</button>
+          <a href="contact.html" class="btn btn--primary btn--lg">💬 이 견적으로 상담받기</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Sidebar Summary -->
+    <aside class="calc-sidebar">
+      <div class="calc-summary">
+        <div class="calc-summary__header">
+          <h3>예상 견적</h3>
+          <p>선택하신 옵션 기준</p>
+        </div>
+        <div class="calc-summary__body">
+          <div class="calc-summary__items" id="summaryItems">
+            <div class="calc-summary__empty">옵션을 선택하시면 여기에 표시됩니다.</div>
+          </div>
+          <div class="calc-summary__divider"></div>
+          <div class="calc-summary__total">
+            <span class="calc-summary__total-label">예상 합계</span>
+            <span class="calc-summary__total-price" id="summaryTotal">0원</span>
+          </div>
+          <div class="calc-summary__vat">VAT 별도</div>
+        </div>
+        <div class="calc-summary__footer">
+          <a href="contact.html" class="btn btn--primary btn--full">이 견적으로 상담받기</a>
+          <p class="calc-summary__note">※ 본 견적은 참고용이며, 정확한 금액은 상담을 통해 확정됩니다.</p>
+        </div>
+      </div>
+    </aside>
+
+  </div><!-- /calc-layout -->
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer"><div class="container"><div class="footer__grid"><div class="footer__brand"><div class="footer__logo">UNIFL</div><p class="footer__desc">고객 중심의 성장을 위한 웹 에이전시</p><div class="footer__contact-item">📞 010-8808-0701</div></div><div><h4 class="footer__heading">서비스</h4><div class="footer__links"><a href="service/homepage.html" class="footer__link">홈페이지 제작</a><a href="estimate.html" class="footer__link">견적 계산기</a></div></div><div><h4 class="footer__heading">제작가이드</h4><div class="footer__links"><a href="guide/process.html" class="footer__link">제작절차</a><a href="guide/faq.html" class="footer__link">FAQ</a></div></div><div><h4 class="footer__heading">바로가기</h4><div class="footer__links"><a href="about.html" class="footer__link">회사소개</a><a href="portfolio.html" class="footer__link">포트폴리오</a><a href="contact.html" class="footer__link">문의하기</a></div></div></div><div class="footer__bottom"><span>© 2025 UNIFL. All rights reserved.</span></div></div></footer>
+<div class="floating-cta"><a href="tel:010-8808-0701" class="floating-cta__btn floating-cta__btn--phone">📞</a><a href="contact.html" class="floating-cta__btn floating-cta__btn--primary">✉️</a><button class="floating-cta__btn floating-cta__btn--top" id="scrollToTop">↑</button></div>
+<script src="js/main.js"></script>
+<script src="js/estimate.js"></script>
+</body></html>
